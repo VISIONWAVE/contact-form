@@ -1,0 +1,83 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #111; /* Dark background for better glow effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container */
+.container {
+    width: 40%;
+    background: black; /* Darker background */
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.3); /* Subtle outer glow */
+    border-radius: 5px;
+    color: white;
+}
+
+/* Form elements */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+    color: #00ffcc; /* Cyan glow color */
+}
+
+/* Glowing input fields */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Glowing effect when focused */
+input:focus, textarea:focus {
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+    border-color: #00ffcc;
+}
+
+/* Glowing button */
+button {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid #00ffcc;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* Glowing effect on hover */
+button:hover {
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+    background: #00ffcc;
+    color: black;
+    border-color: black;
+}
+
+/* Success and error messages */
+.success-message {
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+    text-shadow: 0 0 10px #ff0000;
+}

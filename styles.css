@@ -1,0 +1,80 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Form container */
+.container {
+    width: 40%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 204, 0.6);
+    border-radius: 10px;
+    color: white;
+}
+
+/* Form elements */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Glowing Input & Textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #00ffcc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: black;
+    color: white;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus {
+    box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc;
+    border-color: #00ffcc;
+    outline: none;
+}
+
+/* The Glorious Glowing Button */
+button {
+    background: black;
+    color: #00ffcc;
+    padding: 10px;
+    border: 2px solid #00ffcc;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+    background: #00ffcc;
+    color: black;
+    border-color: black;
+}
+
+/* Success and error messages */
+.success-message {
+    color: #00ff00;
+    font-weight: bold;
+    text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    text-shadow: 0 0 5px red, 0 0 10px red;
+}
