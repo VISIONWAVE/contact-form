@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: my-php-app
+    runtime: php
+    region: oregon  # Change if needed
+    plan: free  # Use 'starter' or 'pro' for better performance
+    buildCommand: ""  # Use "composer install" if needed
+    startCommand: "php -S 0.0.0.0:10000 -t public"
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false  # Set this in the dashboard manually if using a database
