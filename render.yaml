@@ -6,7 +6,7 @@ services:
     plan: free  # Use 'starter' or 'pro' for better performance
     buildCommand: "apt-get update && apt-get install -y "  # Use "composer install" if needed
     startCommand: "php -S 0.0.0.0:10000 -t public"
-    envVars:
+    envVars: debian
       - key: APP_ENV
         value: production
       - key: DATABASE_URL
