@@ -4,7 +4,7 @@ services:
     runtime: php
     region: oregon  # Change if needed
     plan: free  # Use 'starter' or 'pro' for better performance
-    buildCommand: ""  # Use "composer install" if needed
+    buildCommand: "apt-get update && apt-get install -y "  # Use "composer install" if needed
     startCommand: "php -S 0.0.0.0:10000 -t public"
     envVars:
       - key: APP_ENV
